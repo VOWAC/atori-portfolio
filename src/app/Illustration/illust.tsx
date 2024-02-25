@@ -3,8 +3,8 @@ import React from 'react'
 
 const Illust = () => {
   return (
-    <div>
-      <Image src='/Illustrations/fydnr_v.jpeg' alt='illust1' width={500} height={500} />
+    <div className='mt-[15%] flex justify-center'>
+      <Image src='/Illustrations/fydnr_v.jpeg' alt='illust1' width={500} height={500} className='w-[150px] h-[400px] object-cover'/>
     </div>
   )
 }
