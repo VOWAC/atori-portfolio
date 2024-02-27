@@ -7,7 +7,7 @@ import { useState } from 'react';
 const Illust = () => {
   const [hover, setHover] = useState(false);
   return (
-    <div className="mt-[17%] flex justify-center group relative">
+    <div className="flex justify-center items-center h-screen group relative">
       <div
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
@@ -21,12 +21,10 @@ const Illust = () => {
           />
         </div>
       </div>
-      {hover && (
-        <div
-          className="fixed inset-0 bg-cover bg-no-repeat z-[-1] opacity-20"
-          style={{ backgroundImage: 'url("/Illustrations/fydnr_v.jpeg")' }}
-        ></div>
-      )}
+      <div
+        className={`fixed inset-0 z-[-1] bg-no-repeat bg-center bg-cover transition-opacity duration-300 ease-in-out ${hover ? 'opacity-20' : 'opacity-0'}`}
+        style={{ backgroundImage: 'url("/Illustrations/fydnr_v.jpeg")' }}
+      ></div>
     </div>
   );
 };
