@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
-import Title from './title';
+import Title from '../title';
 import Introduction from './introduction';
 
 const About = () => {
   return (
-    <div className="flex items-center w-4/5 m-auto">
+    <div className="flex items-center w-4/5 m-auto overflow-x-hidden;">
       <div>
         <Title title="自己紹介" />
-        <div className='absolute top-1/4'>
+        <div className='flex h-screen items-center'>
         <Introduction />
         </div>
       </div>
