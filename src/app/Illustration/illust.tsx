@@ -11,7 +11,7 @@ type Props = {
 const Illust = ({ src }: Props) => {
   const [hover, setHover] = useState(false);
   return (
-    <div className="flex justify-center items-center h-screen group relative">
+    <div>
       <div
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
