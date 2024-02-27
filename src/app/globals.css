@@ -18,6 +18,7 @@
 
 *{
   font-family: 'Noto Serif JP', serif;
+  overflow-x: hidden;
 }
 
 body {

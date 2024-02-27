@@ -5,7 +5,7 @@ import Introduction from './introduction';
 
 const About = () => {
   return (
-    <div className="flex items-center w-4/5 m-auto overflow-x-hidden;">
+    <div className="flex items-center w-4/5 m-auto">
       <div>
         <Title title="自己紹介" />
         <div className='flex h-screen items-center'>
