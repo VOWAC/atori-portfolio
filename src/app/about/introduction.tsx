@@ -2,7 +2,7 @@ import React from 'react'
 
 const Introduction = () => {
   return (
-    <div className='border-y-[1px] p-10'>
+    <div className='border-y-[1px] p-10 backdrop-blur-3xl text-xs md:text-sm lg:text-sm xl:text-base'>
       <p>
       冬隣あとりです。ふゆどなり、と読みます。
         <br />
