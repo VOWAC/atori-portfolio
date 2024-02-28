@@ -31,11 +31,13 @@ const Page = () => {
       <div className='ml-10'>
       <Title title="イラスト" />
       </div>
-      <div className="mt-5 w-screen grid place-items-center grid-cols-1 gap-y-3 gap-x-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-5">
         <div className="border-[1px] border-white w-full fixed top-1/2 -z-50" />
+        <div className='w-screen grid place-items-center grid-cols-1 gap-y-3 gap-x-1 md:grid-cols-2 lg:grid-cols-3'>
         {imagePaths.map((path, i) => (
           <IllustMobile key={i} src={path} />
         ))}
+        </div>
       </div>
     </div>
   );
