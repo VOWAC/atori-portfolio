@@ -7,7 +7,9 @@ const About = () => {
   return (
     <div className="flex items-center w-4/5 m-auto">
       <div>
+        <div className='absolute top-40 left-[5%]'>
         <Title title="自己紹介" />
+        </div>
         <div className='flex h-screen items-center'>
         <Introduction />
         </div>
